@@ -1,6 +1,11 @@
 Selenium Tools
 ==============
 
+[project](https://sr.ht/~logankirkland/selenium-tools/) / 
+[repo](https://git.sr.ht/~logankirkland/selenium-tools) / 
+[mailing list](https://lists.sr.ht/~logankirkland/selenium-tools) /
+[issues](https://todo.sr.ht/~logankirkland/selenium-tools)
+
 This is a simple template for a selenium web-based test library. It includes some tools
 which help make selenium-based tests more robust and reliable.
 
