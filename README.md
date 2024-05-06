@@ -48,3 +48,5 @@ This code uses the following dependencies:
   which is licensed under GPL-3.0.
 - [selenium](https://github.com/SeleniumHQ/Selenium), which is licensed
   under Apache-2.0.
+- This project is based on my [Selenium Tools library](https://git.sr.ht/~logankirkland/selenium-tools),
+  which is licensed under MIT.
