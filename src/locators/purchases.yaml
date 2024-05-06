@@ -1,0 +1,10 @@
+purchase_cards: //li[contains(@class, 'card-rewards-purchase-eraser__transactions-item')]
+date: //div[contains(@class, 'card-rewards-purchase-eraser-transaction__container-month-day')]
+merchant: //div[contains(@class, 'card-rewards-purchase-eraser-transaction__container-merchant-name')]
+cost: //div[contains(@class, 'card-rewards-purchase-eraser-transaction__container-sub-message')]
+radio_button: //input
+continue_button: //button[@aria-label='Continue']
+confirm_button: //button[@aria-label='Confirm']
+miles_fields: //div[contains(@class, 'card-rewards-purchase-eraser-message-body')]
+success: //h2[contains(text(), 'Success')]
+confirmation: //div[contains(@class, 'card-rewards-redemption-confirmation__centerline-code')]

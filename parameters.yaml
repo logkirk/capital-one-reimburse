@@ -1,1 +1,4 @@
+username:
+password:
+default_selenium_timeout: 60
 actionchains_timeout: 60
