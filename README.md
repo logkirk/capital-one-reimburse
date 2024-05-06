@@ -1,106 +1,50 @@
-Selenium Tools
-==============
+Capital One Auto-Reimburser
+===========================
 
-[project](https://sr.ht/~logankirkland/selenium-tools/) / 
-[repo](https://git.sr.ht/~logankirkland/selenium-tools) / 
-[mailing list](https://lists.sr.ht/~logankirkland/selenium-tools) /
-[issues](https://todo.sr.ht/~logankirkland/selenium-tools)
+[project](https://sr.ht/~logankirkland/capital-one-reimburse/) /
+[repo](https://git.sr.ht/~logankirkland/capital-one-reimburse) /
+[mailing list](https://lists.sr.ht/~logankirkland/capital-one-reimburse) /
+[issues](https://todo.sr.ht/~logankirkland/capital-one-reimburse)
 
-This is a simple template for a selenium web-based test library. It includes some tools
-which help make selenium-based tests more robust and reliable.
+Warning
+-------
+This code uses automation tools to access your account. Review the terms
+of service for your account and use this tool at your own risk.
 
-- [Description](#description)
-- [File structure](#file-structure)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Command line usage](#command-line-usage)
-- [Reporting](#reporting)
+Description
+-----------
 
-File structure
---------------
-
-- `selenium-tools` - project root directory
-    - `src` - source code root directory
-        - `.venv` - Python virtual environment (created during installation)
-        - `driver` - module containing basic selenium webdriver code
-        - `locators` - selenium locators and related Python code
-        - `pages` - code related to the Page Object Model
-        - `tests` - test code
-    - `chromedriver.exe` - chromedriver (created during installation)
-    - `parameters.yaml` - test configuration file
-    - `readme.md` - this readme
-    - `requirements.txt` - Python requirements for installation using pip
+One feature of the Capital One Venture X credit card is the ability
+to reimburse yourself for covered purchases using accrued points.
+Unfortunately the UI for this process requires so many clicks that I
+find my wrist is tired before I have been able to process all the
+charges. This tool uses selenium to automate this reimbursement process.
 
 Installation
 ------------
 
-### Prerequisites
+1. Install [Google Chrome](https://www.google.com/chrome/)
+2. Download the version of chromedriver matching the version of your
+   Chrome browser installation. See the
+   [Chrome for Testing](https://googlechromelabs.github.io/chrome-for-testing/)
+   site for download links. Extract and copy the binary to the root 
+   directory of this project.
+3. (Recommended) [Set up and activate](https://docs.python.org/3/library/venv.html#creating-virtual-environments)
+   a Python virtual environment
+4. Install requirements: `python -m pip install -r requirements.txt`
 
-This guide assumes the following prerequisites have been met:
+Usage
+-----
 
-- Chrome browser installed
+1. Edit `parameters.yaml` with your account credentials.
+2. Run `python capital_one_reimburse.py`
 
-### Create Python virtual environment
+Dependencies
+------------
 
-Change directory to the project root directory, then execute the following command to
-create the virtual environment:
+This code uses the following dependencies:
 
-```shell
-python -m venv .venv
-```
-
-Then activate the virtual environment using the command appropriate for your shell.
-See [the documentation](https://docs.python.org/3/library/venv.html#how-venvs-work) for
-more info.
-
-### Download chromedriver
-
-Download the version of chromedriver matching the version of your Chrome browser
-installation. See
-the [Chrome for Testing](https://googlechromelabs.github.io/chrome-for-testing/) site
-for download links. Extract the `.zip` file and copy the chromeriver file to the root
-project directory.
-
-### Install Python requirements
-
-The required Python modules are listed in `requirements.txt`. Install them in your
-activated virtual environment using:
-
-```shell
-python -m pip install -r requirements.txt
-```
-
-Configuration
--------------
-
-Test configuration parameters are contained in `parameters.yaml`.
-
-Command line usage
-------------------
-
-In the base project directory with the configured virtual environment activated, execute
-the following to run all tests in the `tests.py` module:
-
-```shell
-python -m unittest tests
-```
-
-Run a specific test suite using:
-
-```shell
-python -m unittest tests.ExampleTestSuite
-```
-
-Run a specific test case using:
-
-```shell
-python -m unittest tests.ExampleTestSuite.test_example_test
-```
-
-See [unittest documentation](https://docs.python.org/3/library/unittest.html) for more
-details.
-
-Reporting
----------
-
-TODO
+- [undetected-chromedriver](https://github.com/ultrafunkamsterdam/undetected-chromedriver),
+  which is licensed under GPL-3.0.
+- [selenium](https://github.com/SeleniumHQ/Selenium), which is licensed
+  under Apache-2.0.
