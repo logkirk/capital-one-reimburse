@@ -6,6 +6,14 @@ Capital One Auto-Reimburser
 [mailing list](https://lists.sr.ht/~logankirkland/capital-one-reimburse) /
 [issues](https://todo.sr.ht/~logankirkland/capital-one-reimburse)
 
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![builds.sr.ht status](https://builds.sr.ht/~logankirkland/capital-one-reimburse.svg)](https://builds.sr.ht/~logankirkland/capital-one-reimburse?)
+
+Automates the UI for Capital One Venture X charge reimbursement.
+
+> ℹ️ **Note**  
+> The canonical project locations are linked above. Other locations are mirrors.
+
 Warning
 -------
 This code uses automation tools to access your account. Review the terms
