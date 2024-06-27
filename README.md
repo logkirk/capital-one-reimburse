@@ -24,14 +24,9 @@ Installation
 ------------
 
 1. Install [Google Chrome](https://www.google.com/chrome/)
-2. Download the version of chromedriver matching the version of your
-   Chrome browser installation. See the
-   [Chrome for Testing](https://googlechromelabs.github.io/chrome-for-testing/)
-   site for download links. Extract and copy the binary to the root 
-   directory of this project.
-3. (Recommended) [Set up and activate](https://docs.python.org/3/library/venv.html#creating-virtual-environments)
+2. (Recommended) [Set up and activate](https://docs.python.org/3/library/venv.html#creating-virtual-environments)
    a Python virtual environment
-4. Install requirements: `python -m pip install -r requirements.txt`
+3. Install requirements: `python -m pip install -r requirements.txt`
 
 Usage
 -----
